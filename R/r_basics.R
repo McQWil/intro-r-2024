@@ -3,8 +3,12 @@
 #   little minds"   -Ralph Waldo Emerson 
 
 # Literals ----
+"this is a string literal" #double quotes preferred by not required
+42
 
 # Operators ----
+
+
 
 # variables ----
 
