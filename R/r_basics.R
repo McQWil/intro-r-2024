@@ -65,6 +65,24 @@ x
 
 # data structures ----
 # vectors have a single dimension, like a column or row of data
+a<- c("1", "2", "3")
+a
+a<- c(1,2,3)
+a
+a+1 #vectorized operation
+
+a <- c(1,2,3,"4")
+typeof(a) #r will figure out the type that can apply to all, in this case it falls back to all characters
+a+1 #a is no longer numeric, errors out
+
+a<3
+a<- c(1,2,3)
+a<3
+any(a< 3) #tests whether any value
+3 %in% a #test membership in a vector
+4 %not in% a #this is not a function
+!4 %in% a  #this works
+
 
 # data frames - the key structure for data science, multi-dimensional
 #   collections of vectors
