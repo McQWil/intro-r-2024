@@ -94,7 +94,7 @@ df$b
 
 df$moe <-c("bike", "car", "bus")  #adding a column
 df
-summary(df)
+summary(df) #summarize by column
 
 
 # Special type: factors, and putting it all together ----
