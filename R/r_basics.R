@@ -47,8 +47,21 @@ identical(42,"42") #type matters
 
 
 
-# varTRUEiables ----
+# variables ----
+x <- "this is a string"  
+x
+typeof(x)
+x<- 10
+x
+x^2
 
+pizza<-x
+pizza
+
+my_var = 42  #works but not standard in r
+my_var <- 42
+x<- my_var
+x
 
 # data structures ----
 # vectors have a single dimension, like a column or row of data
