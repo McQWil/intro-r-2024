@@ -86,6 +86,14 @@ any(a< 3) #tests whether any value
 
 # data frames - the key structure for data science, multi-dimensional
 #   collections of vectors
+df<- data.frame(a =  c(1,2,3),
+                b = c("chris", "Chris", "kris"))
+
+df$a #single column
+df$b
+
+df$moe <-c("bike", "car", "bus")  #adding a column
+df
 
 
 # Special type: factors, and putting it all together ----
