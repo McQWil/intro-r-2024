@@ -12,9 +12,26 @@
  icebreaker_answers <- read_excel("data/icebreaker_answers.xlsx")
  View(icebreaker_answers)
  
+ library(dplyr)
+ 
+ odot_meta<-sta_meta   |>  #old pipe notation  %>%
+filter(agency == "ODOT", highwayid == 1)
+ 
+ aa<-sta_meta[sta_meta$agency %in% "ODOT" & sta_meta$highwayid %in% 1,] #baseR
+ 
+ notodot<- sta_meta |>
+   filter(agency != "ODOT")
+ 
+ nas_meta <- sta_meta |>
+   filter(is.na(detectorlocation)
+        )
+ 
+ real_meta <- sta_meta |>
+   filter(!is.na(detectorlocation)
+   )
  
  
  
  
  
- 
+
